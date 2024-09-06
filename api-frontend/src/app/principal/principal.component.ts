@@ -1,5 +1,5 @@
+import { Cliente } from './../modelo/Cliente';
 import { Component } from '@angular/core';
-import { Cliente } from '../modelo/Cliente';
 import { ClienteService } from '../servico/cliente.service';
 
 @Component({
@@ -8,6 +8,10 @@ import { ClienteService } from '../servico/cliente.service';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent {
+
+  // Objeto do tipo Cliente
+  cliente = new Cliente();
+
   // Variável para visíbilidade dos botões
   btnCadastro:boolean = true;
 
