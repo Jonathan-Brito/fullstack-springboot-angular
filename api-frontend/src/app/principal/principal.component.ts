@@ -23,4 +23,9 @@ export class PrincipalComponent {
     .subscribe(retornoLista => this.clientes = retornoLista);
   }
 
+  // Método de inicialização
+  ngOnInit(){
+    this.selecionar();
+  }
+
 }
