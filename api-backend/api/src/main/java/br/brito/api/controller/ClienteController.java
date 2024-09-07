@@ -19,7 +19,7 @@ public class ClienteController {
         return clienteRepository.save(c); // c é o objeto contendo as caracteristicas
     }
     @GetMapping("/")
-    public String teste(){
-        return "Hello World !";
+    public Iterable<Cliente> selecionar(){
+        return clienteRepository.findAll();
     }
 }
