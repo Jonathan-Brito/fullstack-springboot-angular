@@ -4,10 +4,7 @@ import br.brito.api.model.Cliente;
 import br.brito.api.repositories.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class ClienteController {
@@ -27,5 +24,9 @@ public class ClienteController {
     @PutMapping("/")
     public Cliente editar(@RequestBody Cliente c){
         return clienteRepository.save(c);
+    }
+    @DeleteMapping("/{codigo}") // passando por url
+    public void remover(@PathVariable long codigo){
+        clienteRepository.deleteById(codigo);
     }
 }
