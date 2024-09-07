@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
@@ -21,5 +22,10 @@ public class ClienteController {
     @GetMapping("/")
     public Iterable<Cliente> selecionar(){
         return clienteRepository.findAll();
+    }
+
+    @PutMapping("/")
+    public Cliente editar(@RequestBody Cliente c){
+        return clienteRepository.save(c);
     }
 }
