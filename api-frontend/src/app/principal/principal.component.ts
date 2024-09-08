@@ -27,6 +27,12 @@ export class PrincipalComponent {
     .subscribe(retornoLista => this.clientes = retornoLista);
   }
 
+  // Método de cadastro
+  cadastrar():void{
+    this.servico.cadastrar(this.cliente)
+    .subscribe(retorno => { this.clientes.push(retorno); });
+  }
+
   // Método de inicialização
   ngOnInit(){
     this.selecionar();
