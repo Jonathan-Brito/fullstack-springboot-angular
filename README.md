@@ -1,3 +1,34 @@
+<div align="center">
+  <img src="https://github.com/jonathanbritocosta/spring_boot_modulo4/blob/main/logo.png" width="30%">
+  <h1 style="border-bottom:none">Spring Boot e Angular</h1>
+  <p>Instrutor: Jonathan Brito</p>
+  
+  <a href="https://www.youtube.com">
+     <img src="https://img.">
+  </a>
+  
+  <a href="https://www.linkedin.com/in/jonathanbritocosta/">
+    <img src="https://img">
+  </a>
+  
+  <br>
+  <br>
+  <p>Repositório destinado aos arquivos do curso de Spring Boot e Angular do meu canal no YouTube, <a href="https://www.youtube.com">clique aqui</a> para acessar a playlist completa.</p>
+  <br>
+  <div align="justify">
+  <h3>Tópicos abordados:</h3>
+  
+   + Criação de API em Spring Boot contendo os métodos: GET, POST, PUT e DELETE;
+   + Criação de uma estrutura front-end em Angular para consumir a API.
+
+   <h3>Projeto final e certificado</h3>
+
+   <p>Caso queira realizar o projeto final com mentoria, englobando todos os assuntos aprendidos nas aulas e com possibilidade de obter certificado, é necessário ser membro do canal.</p>
+
+   <p>Tendo dúvidas é só comentar nos vídeos ou enviar e-mail para: <b>contato@jonathanbrito.com<b>.</p>
+  </div>
+</div>
+
 # fullstack-springboot-angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
@@ -25,3 +56,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
